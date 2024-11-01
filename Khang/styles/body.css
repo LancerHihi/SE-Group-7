@@ -1,0 +1,85 @@
+.navigation {
+  display: flex;
+  margin-top: 50px;
+  padding-left: 0;
+  align-items: center;
+}
+
+.navigation img {
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+.navigation h2 {
+  font-family: Roboto, Arial;
+}
+
+.main-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+}
+.printer-list {
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  background-color: darkblue;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+.confirm-section {
+  height: 510px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.confirm-button {
+  position: absolute;
+  bottom: 50px;
+  font-size: 1.5em;
+  font-family: Roboto;
+  background-color: rgb(200, 206, 211);
+  color: gray;
+  padding: 7px 30px;
+  border: none;
+  border-radius: 6px;
+}
+
+.printer {
+  background-color: rgb(192, 189, 189);
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 25px;
+  
+}
+
+.printer h2 {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.printer p {
+  margin: 0;
+}
+
+.choosing {
+  background-color: rgb(240, 75, 75);
+}
+
+.button-trigger {
+  background-color: rgb(43, 43, 138);
+  color: white;
+  cursor: pointer;
+}
