@@ -31,9 +31,20 @@
   bottom: 50px;
   left: 50px;
   right: 50px;
-  background-color: darkblue;
-  padding: 25px;
+  background-color: white;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 10px;
   overflow-y: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.container::-webkit-scrollbar {
+  width: 10px; /* Độ rộng của thanh trượt */
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.7); /* Màu thanh cuộn */
+  border-radius: 10px; /* Bo tròn thanh trượt */
 }
 
 .confirm-section {
@@ -62,12 +73,20 @@
   height: 120px;
   margin-bottom: 20px;
   padding: 25px;
-  
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  border-radius: 10px;
+}
+.printer:hover {
+  transform: scale(1.01); /* Phóng to nhẹ */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Hiệu ứng đổ bóng */
+  z-index: 10; /* Nổi lên trên các phần tử khác */
 }
 
 .printer h2 {
   margin: 0;
   font-family: Roboto;
+  margin-bottom: 30px;
 }
 
 .printer p {
@@ -82,4 +101,19 @@
   background-color: rgb(43, 43, 138);
   color: white;
   cursor: pointer;
+}
+
+.printer-image {
+  width: 90px;
+}
+
+.unavailable {
+  background-color: gray; /* Màu tối để biểu thị không khả dụng */
+  cursor: not-allowed; /* Thay đổi con trỏ để biểu thị không thể chọn */
+  opacity: 0.6; /* Làm mờ máy in không khả dụng */
+}
+
+.unavailable:hover {
+  transform: none; /* Không thêm hiệu ứng hover */
+  box-shadow: none;
 }
