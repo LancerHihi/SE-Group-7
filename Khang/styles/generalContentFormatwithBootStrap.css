@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.header {
+    margin: 0 0 0 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.anum {
+    text-decoration: none;
+}
+
+/* 
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar .logo a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #999999;
+    line-height: normal;
+    
+} */
+
+.menu-none {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.confirm {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.menu-links {
+    display: flex;
+    gap: 24px;
+    border-right: 1px solid #999999;
+    padding-inline: 24px;
+}
+
+.menu-links .anum {
+    font-weight: 500;
+    color: #999999;
+    padding: 8px 16px;
+    text-align: right;
+}
+
+.menu-links b {
+    font-weight: 1000;
+    color: #999999;
+    justify-content: flex-start;
+}
+
+.menu-links b:hover {
+    color: white;
+}
+
+.menu-links .anum:hover {
+    color: white;
+}
+
+.menu-links black:hover {
+    color: black;
+}
+
+.log-in {
+    font-weight: 500;
+    padding: 12px 22px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition: 0.2s;
+}
+
+.menu-btn-none {
+    font-size: 32px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+#myLink {
+    text-align: right;
+    font-family: cursive;
+}
+
+.section1 {
+    height: 100vh;
+    background-image: url(https://hcmut.edu.vn/img/carouselItem/07531069.jpg?t=07531113);
+    background-attachment: scroll;
+
+    background-position: center;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.table-none {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.table-link {
+
+    width: 40%;
+
+    border-collapse: collapse;
+    border: 5px solid silver;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+
+}
+
+.response {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.log-in:hover {
+    background-color: #0aa5ff;
+    color: white;
+}
+
+td {
+    height: 50px;
+}
+
+@media (max-width: 3rem) {
+    .menu {
+        display: relative;
+    }
+
+    .menu-btn {
+        display: relative;
+    }
+}
