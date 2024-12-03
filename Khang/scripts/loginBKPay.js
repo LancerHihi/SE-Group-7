@@ -47,12 +47,14 @@ function checkID(username, ID_number, user_BKPAY, pass_BKPAY) {
             // document.getElementById('loginMessage').innerText = 'Successfully Log In';
             // TODO: Dieu huong chuyen trang
             console.log("SUCCESS");
+            window.location.href = "successLogin/success.html";
             return;
         }
         document.getElementById("errorMessage").style.display = "inline";
         document.getElementById("NotFoundID").style.display = "none";
         document.getElementById("lackDetails").style.display = "none";
         // console.log("Failed");
+        
         return;
     }
     // else document.getElementById('loginForm').innerText =
@@ -67,7 +69,7 @@ function checkID(username, ID_number, user_BKPAY, pass_BKPAY) {
     return;
 }
 
-document.getElementById('loginForm').addEventListener('submit', async function (event){
+document.getElementById('loginForm').addEventListener('click', async function (event){
     event.preventDefault();
 
     const username = document.getElementById('name').value;
@@ -75,11 +77,13 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     const user_BKPAY = document.getElementById('nameBKPAY').value;
     const pass_BKPAY = document.getElementById('password').value;
 
+    let flag = false;
     //TODO: CHECK WHETHER FULL IN4
     if (checkFullDetails(username, ID_number, user_BKPAY, pass_BKPAY))
     //TODO: CHECK THE SAME ID
     {
         document.getElementById("lackDetails").style.display = "none";
         checkID(username, ID_number, user_BKPAY, pass_BKPAY);
+
     }
 })
