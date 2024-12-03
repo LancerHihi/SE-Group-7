@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/main/styles/generalContentFormat.css" />
+    <link rel="stylesheet" href="/Khang/styles/generalContentFormat.css" />
     <!-- <link rel="stylesheet" href="/main/styles/responseBackground.css" /> -->
-    <link rel="stylesheet" href="/main/styles/table.css" />
-    <link rel="stylesheet" href="/main/scripts/BK-Pay/payment.css" />
+    <link rel="stylesheet" href="/Khang/styles/table.css" />
+    <link rel="stylesheet" href="/Khang/BKPay/payment.css" />
   </head>
 
   <body>
     <nav class="navbar">
       <div class="logo">
-        <img src="/main/images/logoBK.png" />
+        <img src="/Khang/images/logoBK.png" />
         <a href="#" style="font-family: cursive; font-size: 25px">PAYMENT</a>
       </div>
       <div class="menu">
@@ -28,7 +28,7 @@
     <div class="backgroundPayment">
       <div class="background-transparent">
         <div class="text-overlay">
-          <div class="container">
+          <div class="container" style="padding-bottom: 20px;">
             <h1>Personal Details</h1>
             <div class="personalDetail">
               <div class="input_container">
@@ -39,7 +39,7 @@
                 <a>ID Number:</a>
                 <input
                   type="text"
-                  id="name"
+                  id="IDN"
                   placeholder="Enter your ID number"
                 />
               </div>
@@ -50,7 +50,7 @@
                 <a>Username: </a>
                 <input
                   type="text"
-                  id="name"
+                  id="nameBKPAY"
                   placeholder="Enter your username"
                 />
               </div>
@@ -58,7 +58,7 @@
                 <a>Password: </a>
                 <input
                   type="password"
-                  id="name"
+                  id="password"
                   placeholder="Enter your password"
                 />
               </div>
@@ -70,14 +70,26 @@
     -->
             <!-- <h5>Note: The price of one A3 paper is equivalent to two A4 papers</h5> -->
           </div>
+            <div id="errorMessage" style="padding-top: 30px; font-style: italic; color: red; display: None">
+              The information is not right
+            </div>
+            <div id="NotFoundID" style="padding-top: 30px; font-style: italic; color: red; display: None">
+              The ID number is not exist
+            </div>
+            <div id="lackDetails" style="padding-top: 30px; font-style: italic; color: red; display: None">
+              Please enter full requirements
+            </div>
           <div class="menu">
-            <div class="confirm">
-              <button class="log-in">Confirm</button>
+          
+            <div class="confirm" style="padding-top: 10px">
+              <button id="loginForm" class="log-in">Confirm</button>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
+    
     <div class="Footer">
       <footer>
         <p>This page is created by Team 7 of Software Engineering</p>
@@ -88,4 +100,5 @@
       </footer>
     </div>
   </body>
+  <script src="../scripts/loginBKPay.js" type="module"></script>
 </html>
