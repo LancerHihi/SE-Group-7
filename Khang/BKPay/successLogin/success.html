@@ -18,7 +18,7 @@
           <a href="#">Contact</a>
           <a href="#">Exit</a>
         </div>
-        <button class="log-in">Log In</button>
+        <button class="log-in" id="Home">Home</button>
       </div>
       <div class="menu-btn">
         <i class="fa-solid fa-bars"></i>
@@ -31,9 +31,9 @@
             <h1>Number of papers need buying</h1>
             <div class = "input_container">
               <a>A3: </a>
-              <input type="number" id="A3" step="5" min="0" max="100" value="0" oninput="calculateTotal()" />
+              <input type="number" id="A3" step="5" min="0" max="100" value="0"  />
               <a style="padding-left: 30px;">A4: </a>
-              <input type="number" id="A4" step="5" min="0" max="100" value="0" oninput="calculateTotal()"/>
+              <input type="number" id="A4" step="5" min="0" max="100" value="0" />
             </div>
             <div>
               <p style="font-size: 10px;">Note: Price of ONE A3 equals to price of TWO A4</p>
@@ -46,7 +46,7 @@
           </div>
           <div class="menu">
             <div class="confirm">
-              <button class="log-in">Confirm</button>
+              <button class="log-in" id="confirm">Confirm</button>
             </div>
           </div>
         </div>
@@ -62,13 +62,8 @@
       </footer>
     </div>
   </body>
-  <script>
-    function calculateTotal(){
-      const papers_A3 = document.getElementById('A3').value;
-      const papers_A4 = document.getElementById('A4').value;
-      const totalAmount = document.getElementById('totalBox');
-
-      totalAmount.value = papers_A3*400 + papers_A4*250 + ' VND';
-    }
+  <script src="/Khang/scripts/success.js" type="module">
+    
   </script>
+  <script src="../scripts/return.js" type="module"></script>
 </html>

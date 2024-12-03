@@ -116,16 +116,17 @@ button {
     text-align: center;
 }
 
-.background-whole{
+.background-whole {
     display: grid;
     margin-top: 90px;
     /* height: 400px; */
     gap: 10px;
     justify-items: center;
     align-items: center;
-    
+
 }
-.table-option{
+
+.table-option {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -137,18 +138,18 @@ button {
     border-radius: 15px;
 }
 
-.contain-flex{
+.contain-flex {
     display: flex;
 }
 
-.contain-flex-login{
+.contain-flex-login {
     margin-top: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.note{
+.note {
     display: grid;
     font-size: 15px;
     font-family: inherit;
@@ -161,14 +162,30 @@ button {
     margin-top: 73px;
 }
 
-.note .element{
+.note .element {
     font-size: 13px;
     padding-left: 30px;
     font-weight: normal;
     margin-right: 40px;
 }
 
-.thead{
-    height: 5px;
-    
+.displaySummary{
+    display: grid;
+    font-size: 15px;
+    font-family: inherit;
+    padding: 10px;
+    margin-left: 30px;
+    /* background-color: #ececec; */
+    font-weight: bold;
+    margin-bottom: 300px;
+    margin-right: 50px;
+    margin-top: 73px;
 }
+
+.displaySummary .elementDisplay{
+    font-size: 15px;
+    padding-left: 30px;
+    font-weight: normal;
+    margin-right: 40px;
+}
+
