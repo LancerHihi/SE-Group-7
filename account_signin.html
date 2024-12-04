@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/input.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </header>
+<body>
+    <div class="header">
+      <img src="/images/logoBK.png">
+      <p>Central Authentication Service</p>
+    </div>
+    <div class="navigation">
+      <a href="account_signin.html"><img src="/images/leading-icon.png"></a>
+      <h2>Sign in</h2>
+    </div>
+    <!-- the format-->
+    <title> Sign in </title>
+    
+    <div class="loginbox">
+    <form action = "signin.php" method = "POST">
+      <label for="username" > Username: </label>
+      <input type="text" id="username" placeholder="username" minlength="6" maxlength="15" required>
+      <br>
+      <label for="password" > Password: </label>
+      <input type="password" id="password" placeholder="password" minlength="8" maxlength="120" required>
+      <br>
+      <span class="movetoregist">
+        <p > Do not have an account? <a href="account_register.html" >Regist now</a></p>
+      </span>
+      
+      <div class="button">
+        <input type="reset">
+        <input type="submit">
+      </div>
+    </form>
+   
+  </div>
+  <br>
+  <br>
+  <br>
+  <!-- <span>
+    <p > upload <a href="upload.html" >move</a></p>
+    <p > choose printer <a href="printer.html" >move</a></p>
+  </span> -->
+<script src="account_register.js"></script>
+  </body>
+</html>

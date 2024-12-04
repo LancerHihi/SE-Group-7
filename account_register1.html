@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/body.css" />
+    <link rel="stylesheet" href="styles/account_signin1.css">
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="/images/logoBK.png" />
+      <p>Central Authentication Service</p>
+    </div>
+
+    <div class="wrapper">
+      <form action="">
+        <h1>Register New Account</h1>
+
+        <div class="input-box">
+          <input type="text" placeholder="Fullname" id="fullname" required />
+          <i class='bx bxs-id-card' ></i>
+        </div>
+
+        <div class="input-box">
+          <input type="text" placeholder="Phone number" id="phone" required />
+          <i class='bx bxs-phone' ></i>
+        </div>
+
+        <div class="input-box">
+          <input type="text" placeholder="Falcuty" id="falcuty" required />
+          <i class='bx bxs-school' ></i>
+        </div>
+
+        <div class="input-box">
+          <input type="text" placeholder="Email (...@hcmut.edu.vn)" id="email" required />
+          <i class='bx bxs-graduation' ></i>
+        </div>
+
+        <div class="input-box">
+          <input type="text" placeholder="Username" id="username" required />
+          <i class='bx bxs-user'></i>
+        </div>
+
+        <div class="input-box">
+          <input type="password" placeholder="Password" id="password" required />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+
+        <div class="input-box">
+          <input type="password" placeholder="Confirm Password" id="confirm_password" required />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+
+        <button type="submit" class="btn">Sign up</button>
+
+        <div class="register-link">
+          <p>
+            Already have an account? <a href="account_signin1.html">Sign in</a>
+          </p>
+        </div>
+
+      </form>
+    </div>
+
+    <script src="/data/authenticate_signUp.js"></script>
+
+  </body>
+</html>
