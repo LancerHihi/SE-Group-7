@@ -26,6 +26,13 @@
   flex-grow: 1; /* Ensures the text takes up available space */
 }
 
+.welcome {
+  margin-left: auto;
+  padding-right: 3%;
+  font-size: 1.5em;
+  color: white;
+}
+
 /* Content styles */
 body {
   margin: 0;

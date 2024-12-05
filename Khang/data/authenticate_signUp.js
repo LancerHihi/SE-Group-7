@@ -1,3 +1,37 @@
+// Function to initialize default users in localStorage
+(function initializeDefaultUsers() {
+  const defaultUsers = [
+    {
+      fullname: "Admin User",
+      phone: "1234567890",
+      faculty: "Administration",
+      email: "admin@hcmut.edu.vn",
+      username: "admin",
+      password: "admin123", // Secure password should be used in a real app
+      role: "admin",
+    },
+    {
+      fullname: "Student User",
+      phone: "0987654321",
+      faculty: "Computer Science",
+      email: "student@hcmut.edu.vn",
+      username: "student",
+      password: "student123", // Secure password should be used in a real app
+      role: "student",
+    },
+  ];
+
+  // Check if users data is already in localStorage
+  const users = JSON.parse(localStorage.getItem('users')) || [];
+
+  if (users.length === 0) {
+    localStorage.setItem('users', JSON.stringify(defaultUsers));
+    console.log('Default users initialized.');
+  } else {
+    console.log('Users already exist in localStorage.');
+  }
+})();
+
 // Function to handle the signup process
 document.querySelector('form').addEventListener('submit', function (e) {
   e.preventDefault(); // Prevent form submission
