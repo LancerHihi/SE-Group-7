@@ -389,6 +389,27 @@ main p{
   color: var(--white);
 }
 
+.graphBox{
+  position:relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 5%;
+  min-height: 200px;
+  box-sizing: border-box;
+}
+
+.graphBox .box{
+  position: relative;
+  background: #fff;
+  padding: 20px; /* 20px*/
+  width: 100%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
 .details{
   position: relative;
   width: 100%;
@@ -565,6 +586,10 @@ main p{
 
 /* now,  */
 @media (max-width: 991px){
+  .graphBox{
+    grid-template-columns: 1fr;
+    height: auto;
+  }
   .navigation{
     left: -300px;
   }
