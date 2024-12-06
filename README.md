@@ -5,3 +5,6 @@ And this the form below to survey MVP 1:
 ### Survey Form
 https://forms.gle/jws6RmJGB6XDFska7
 
+# Step guide
+To run this application, please start from file _account_signin1.html_.
+You just need to start live server to run this.
