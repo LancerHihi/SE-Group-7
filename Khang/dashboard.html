@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/styles/dashboard1.css" />
+    <link rel="stylesheet" href="styles/dashboard2.css" />
+    <link rel="stylesheet" href="https://ionic.io/ionicons" />
+
+    <!-- <script type="type/javascript" src="scripts/home1.js"></script> -->
+
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src=".\images\logoBK.png" />
+      <p>Printing service</p>
+      <span id="welcome-message" class="welcome"></span>
+    </div>
+
+    <!-- <aside id="sidebar"></aside> -->
+    <!-- <div class="wrapper"> -->
+    <nav id="sidebar">
+      <ul>
+        <li>
+          <span class="logo">Group 7</span>
+          <button onclick="toggleSidebar()" id="toggle-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm540-453h100v-107H700v107Zm0 186h100v-106H700v106ZM160-240h460v-480H160v480Zm540 0h100v-107H700v107Z"
+              />
+            </svg>
+          </button>
+        </li>
+
+        <li class="active">
+          <a href="home1.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+              />
+            </svg>
+            <span>Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="printer1.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M640-640v-120H320v120h-80v-200h480v200h-80Zm-480 80h640-640Zm560 100q17 0 28.5-11.5T760-500q0-17-11.5-28.5T720-540q-17 0-28.5 11.5T680-500q0 17 11.5 28.5T720-460Zm-80 260v-160H320v160h320Zm80 80H240v-160H80v-240q0-51 35-85.5t85-34.5h560q51 0 85.5 34.5T880-520v240H720v160Zm80-240v-160q0-17-11.5-28.5T760-560H200q-17 0-28.5 11.5T160-520v160h80v-80h480v80h80Z"
+              />
+            </svg>
+            <span>Printing</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/viewLog/history_student1.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M480-120q-138 0-240.5-91.5T122-440h82q14 104 92.5 172T480-200q117 0 198.5-81.5T760-480q0-117-81.5-198.5T480-760q-69 0-129 32t-101 88h110v80H120v-240h80v94q51-64 124.5-99T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-120Zm112-192L440-464v-216h80v184l128 128-56 56Z"
+              />
+            </svg>
+            <span>History</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M320-480v-80h320v80H320Zm0-160v-80h320v80H320Zm-80 240h300q29 0 54 12.5t42 35.5l84 110v-558H240v400Zm0 240h442L573-303q-6-8-14.5-12.5T540-320H240v160Zm480 80H240q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80Zm-480-80v-640 640Zm0-160v-80 80Z"
+              />
+            </svg>
+            <span>Report</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="account_signin1.html" onclick="logout()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"
+              />
+            </svg>
+            <span>Sign out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="cardBox">
+        <div class="card">
+          <div>
+            <div class="numbers">1,504</div>
+            <div class="cardName">Lượt xem</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="eye-outline"> </ion-icon>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <div class="numbers">8</div>
+            <div class="cardName">Đang hoạt động</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="print-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <div class="numbers">100</div>
+            <div class="cardName">Tài liệu in</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="document-text-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <div class="numbers">$7,890</div>
+            <div class="cardName">BKPay</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="card-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data list -->
+      <div class="details">
+        <!-- Data list left -->
+        <div class="recentOrders">
+          <div class="cardHeader">
+            <h2>Lượt in gần đây</h2>
+            <a href="" class="btn">Xem tất cả</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <td>Họ và Tên</td>
+                <td>Máy in</td>
+                <td>Vào lúc</td>
+                <td>Trạng thái</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status success">Thành công</span></td>
+              </tr>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status progress">Đang in</span></td>
+              </tr>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status failure">Thất bại</span></td>
+              </tr>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status payment">Đang chờ</span></td>
+              </tr>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status success">Thành công</span></td>
+              </tr>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status progress">Đang in</span></td>
+              </tr>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status failure">Thất bại</span></td>
+              </tr>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status payment">Đang chờ</span></td>
+              </tr>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status success">Thành công</span></td>
+              </tr>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status progress">Đang in</span></td>
+              </tr>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status failure">Thất bại</span></td>
+              </tr>
+              <tr>
+                <td>Nguyễn Hữu Thanh</td>
+                <td>HP LaserJet 3000</td>
+                <td>07-11-2024 07:04:05</td>
+                <td><span class="status payment">Đang chờ</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Data list 2 -->
+        <div class="recentCustomers">
+          <div class="cardHeader">
+            <h2>Người dùng gần đây</h2>
+          </div>
+          <table>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/images/homeImage1.jpg" alt=""></div></td>
+              <td><h4>Hữu Thanh<br><span>Việt Nam</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/images/homeImage1.jpg" alt=""></div></td>
+              <td><h4>Hữu Thanh<br><span>Việt Nam</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/images/homeImage1.jpg" alt=""></div></td>
+              <td><h4>Hữu Thanh<br><span>Việt Nam</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/images/homeImage1.jpg" alt=""></div></td>
+              <td><h4>Hữu Thanh<br><span>Việt Nam</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/images/homeImage1.jpg" alt=""></div></td>
+              <td><h4>Hữu Thanh<br><span>Việt Nam</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/images/homeImage1.jpg" alt=""></div></td>
+              <td><h4>Hữu Thanh<br><span>Việt Nam</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/images/homeImage1.jpg" alt=""></div></td>
+              <td><h4>Hữu Thanh<br><span>Việt Nam</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="/images/homeImage1.jpg" alt=""></div></td>
+              <td><h4>Hữu Thanh<br><span>Việt Nam</span></h4></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/scripts/home1.js"></script>
+  </body>
+</html>
