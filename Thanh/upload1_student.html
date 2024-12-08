@@ -299,6 +299,25 @@
                   <option value="custom">Custom</option>
                 </select>
               </div>
+
+              <div class="popup-field">
+                <label class="popup-label" for="pages-per-sheet"
+                  >Pages per Sheet:</label
+                >
+                <select class="popup-input" id="pages-per-sheet">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="popup-field">
+                <label class="popup-label" for="margins">Margins:</label>
+                <select class="popup-input" id="margins">
+                  <option value="default">Default</option>
+                  <option value="narrow">Narrow</option>
+                  <option value="custom">Custom</option>
+                </select>
+              </div>
               <div class="popup-field">
                 <label class="popup-label" for="scale">Scale:</label>
                 <input
@@ -315,6 +334,14 @@
                 <label class="popup-label" for="two-sided"
                   >Print on Both Sides</label
                 >
+              </div>
+              <div class="popup-field">
+                  <label class="popup-label">Available Pages:</label>
+                    <span class="popup-static" id="availablePagesCurrent"></span>
+              </div>
+              <div class="popup-field">
+                  <label class="popup-label">Pages Needed:</label>
+                    <span class="popup-static" id="PageNeeded"></span>
               </div>
             </div>
             <div class="popup-buttons">
@@ -361,109 +388,13 @@
     <script src="/scripts/home1.js"></script>
     <script src="scripts/upload.js" type="module"></script>
 
-    <script>
+    <script src="/scripts/payAdditionalPage.js" type="module">
       // function openPopup() {
       //   document.getElementById("popup").style.display = "block";
       // }
 
       // For warning
-      function checkCopies() {
-        var copiesInput = document.getElementById("copies");
-        var warningMessage = document.getElementById("copies-warning");
-        var printButton = document.querySelector(".popup-button.print-button");
-        var payButton = document.querySelector(".popup-button.pay-button");
-
-        if (copiesInput.value >= 10) {
-          warningMessage.style.display = "block";
-          // printButton.disabled = true;
-          printButton.setAttribute("disabled", "disabled");
-          printButton.classList.add("disabled");
-          payButton.style.display = "flex";
-        } else {
-          warningMessage.style.display = "none";
-          // printButton.disabled = false;
-          printButton.removeAttribute("disabled");
-          printButton.classList.remove("disabled");
-          payButton.style.display = "none";
-        }
-      }
-
-      // End of warning
-
-      function handleBuy(){
-        window.location.href = "/BKPay/payment.html";
-      }
-
-      function openPopup() {
-        document.getElementById("popup-overlay").style.display = "flex";
-      }
-
-      function closePopup() {
-        document.getElementById("popup").style.display = "none";
-        window.location.href = "upload1_student.html";
-      }
-
-      function showSuccessPopup() {
-        document.getElementById("success-popup").style.display = "flex";
-        setTimeout(() => {
-          closeSuccessPopup();
-        }, 5000);
-      }
-      function closeSuccessPopup() {
-        document.getElementById("success-popup").style.display = "none";
-        closePopup();
-      }
-
-      function printDocument() {
-        // Get selected values from the popup
-        var destination = document.getElementById("destination").value;
-        var pages = document.getElementById("pages").value;
-        var copies = document.getElementById("copies").value;
-        var layout = document.getElementById("layout").value;
-        var color = document.getElementById("color").value;
-        var paperSize = document.getElementById("paper-size").value;
-        var pagesPerSheet = document.getElementById("pages-per-sheet").value;
-        var margins = document.getElementById("margins").value;
-        var scale = document.getElementById("scale").value;
-        var twoSided = document.getElementById("two-sided").checked;
-
-        // Simulate printing (replace with actual printing logic)
-        // alert(
-        //   "Printing with the following settings:\n" +
-        //     "Destination: " +
-        //     destination +
-        //     "\n" +
-        //     "Pages: " +
-        //     pages +
-        //     "\n" +
-        //     "Copies: " +
-        //     copies +
-        //     "\n" +
-        //     "Layout: " +
-        //     layout +
-        //     "\n" +
-        //     "Color: " +
-        //     color +
-        //     "\n" +
-        //     "Paper Size: " +
-        //     paperSize +
-        //     "\n" +
-        //     "Pages per Sheet: " +
-        //     pagesPerSheet +
-        //     "\n" +
-        //     "Margins: " +
-        //     margins +
-        //     "\n" +
-        //     "Scale: " +
-        //     scale +
-        //     "%\n" +
-        //     "Two-Sided: " +
-        //     (twoSided ? "Yes" : "No")
-        // );
-
-        // closePopup();
-        showSuccessPopup();
-      }
+      
     </script>
   </body>
 </html>
