@@ -7,7 +7,7 @@ var myChart = new Chart(ctx, {
     datasets: [
       {
         label: "Xu hướng in",
-        data: [1200, 1900, 3000],
+        data: [10, 20, 30],
         backgroundColor: [
           "rgba(255, 99, 132, 1)",
           "rgba(54, 162, 235, 1)",
@@ -40,10 +40,9 @@ var myChart = new Chart(earning, {
     ],
     datasets: [
       {
-        label: "Lượng truy cập",
+        label: "Số lần in",
         data: [
-          1200, 1090, 3000, 5400, 1220, 3600, 4800, 4578, 2566, 8545, 4587,
-          9000,
+          3, 6, 7, 6, 9, 8, 4, 5, 4, 4, 2, 1, 1
         ],
 
         backgroundColor: [

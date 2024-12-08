@@ -40,7 +40,7 @@ var myChart = new Chart(earning, {
     ],
     datasets: [
       {
-        label: "Lượng truy cập",
+        label: "Lượng tài liệu",
         data: [
           1200, 1090, 3000, 5400, 1220, 3600, 4800, 4578, 2566, 8545, 4587,
           9000,

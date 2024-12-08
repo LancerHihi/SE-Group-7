@@ -1,8 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   if (
-    window.location.pathname === "/home1_student.html" ||
-    window.location.pathname === "/home1.html"
+    window.location.pathname === "../home1_student.html" ||
+    window.location.pathname === "../home1.html"
   ) {
     // Kiểm tra nếu URL là trang home
 const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
@@ -106,7 +106,7 @@ function openPopup() {
 
 function closePopup() {
   document.getElementById("popup").style.display = "none";
-  window.location.href = "upload1_student.html";
+  window.location.href = "../printer1_student.html";
 }
 
 function showSuccessPopup() {
