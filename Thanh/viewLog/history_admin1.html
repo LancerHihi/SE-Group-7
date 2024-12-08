@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+  <title>History</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://ionic.io/ionicons" /> 
+  <link rel="stylesheet" href="../styles/home1.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <!-- <link rel="stylesheet" href="../styles/history_student1.css"> -->
+  <link rel="stylesheet" href="../styles/history2.css">
+   
+  <title>Home</title>
+</head>
+<body>
+
+  <div class="header">
+    <img src="../images/logoBK.png">
+    <p>Printing service</p>
+    <span id="welcome-message" class="welcome"></span>
+  </div>
+
+  <!-- <aside id="sidebar"></aside> -->
+  <!-- <div class="wrapper"> -->
+    <nav id="sidebar">
+      <ul>
+        <li>
+          <span class="logo">Group 7</span>
+          <button onclick="toggleSidebar()" id="toggle-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm540-453h100v-107H700v107Zm0 186h100v-106H700v106ZM160-240h460v-480H160v480Zm540 0h100v-107H700v107Z"
+              />
+            </svg>
+          </button>
+        </li>
+
+        <li>
+          <a href="../home1.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+              />
+            </svg>
+            <span>Trang chủ</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../printer1.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M640-640v-120H320v120h-80v-200h480v200h-80Zm-480 80h640-640Zm560 100q17 0 28.5-11.5T760-500q0-17-11.5-28.5T720-540q-17 0-28.5 11.5T680-500q0 17 11.5 28.5T720-460Zm-80 260v-160H320v160h320Zm80 80H240v-160H80v-240q0-51 35-85.5t85-34.5h560q51 0 85.5 34.5T880-520v240H720v160Zm80-240v-160q0-17-11.5-28.5T760-560H200q-17 0-28.5 11.5T160-520v160h80v-80h480v80h80Z"
+              />
+            </svg>
+            <span>In tài liệu</span>
+          </a>
+        </li>
+
+        <li class="active">
+          <a href="/viewLog/history_admin1.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M480-120q-138 0-240.5-91.5T122-440h82q14 104 92.5 172T480-200q117 0 198.5-81.5T760-480q0-117-81.5-198.5T480-760q-69 0-129 32t-101 88h110v80H120v-240h80v94q51-64 124.5-99T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-120Zm112-192L440-464v-216h80v184l128 128-56 56Z"
+              />
+            </svg>
+            <span>Lịch sử</span>
+          </a>
+        </li>
+
+        <!-- <li>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M320-480v-80h320v80H320Zm0-160v-80h320v80H320Zm-80 240h300q29 0 54 12.5t42 35.5l84 110v-558H240v400Zm0 240h442L573-303q-6-8-14.5-12.5T540-320H240v160Zm480 80H240q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80Zm-480-80v-640 640Zm0-160v-80 80Z"
+              />
+            </svg>
+            <span>Report</span>
+          </a>
+        </li> -->
+
+        <li>
+          <a href="../account_signin1.html" onclick="logout()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#5f6368"
+            >
+              <path
+                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"
+              />
+            </svg>
+            <span>Đăng xuất</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+<main id="whole">
+  <main class="table" >
+    <section class="table_header">
+      <h1>Lịch sử in</h1>
+      <div class="input-group">
+        <input type="search" placeholder="Tìm kiếm thông tin...">
+        <div class="icon_search">
+          <ion-icon name="search-circle-outline"></ion-icon>
+        </div>
+      </div>
+    </section>
+    <section class="table_body">
+      <table>
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Máy in</th>
+            <th>Họ và Tên</th>
+            <th>File</th>
+            <th>SL trang</th>
+            <th>SL bản</th>
+            <th>Thời gian</th>
+            <th>Trạng thái</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>HP LaserJet 3000</td>
+            <td><img src="/images/homeImage1.jpg" alt=""> Nguyễn Hữu Thanh</td>
+            <td>BTL.pdf</td>
+            <td><strong>2</strong></td>
+            <td>1</td>
+            <td>15-11-2024 07:04:05</td>
+            <td><p class="status success">Thành công</p></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Brother HL-L2350DW</td>
+            <td><img src="/images//homeImage2.jpg" alt=""> Nguyễn Minh Tiến</td>
+            <td>Đồ án.docx</td>
+            <td><strong>5</strong></td>
+            <td>2</td>
+            <td>15-11-2024 07:20:10</td>
+            <td><p class="status failure">Thất bại</p></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Canon PIXMA G3010</td>
+            <td><img src="/images//homeImage3.jpg" alt=""> Trần Hoàng Linh</td>
+            <td>Báo cáo.pdf</td>
+            <td><strong>3</strong></td>
+            <td>1</td>
+            <td>15-11-2024 07:25:15</td>
+            <td><p class="status progress">Đang in</p></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Epson EcoTank L3150</td>
+            <td><img src="/images//homeImage4.jpg" alt=""> Lê Thị Mai</td>
+            <td>Kế hoạch.xlsx</td>
+            <td><strong>7</strong></td>
+            <td>1</td>
+            <td>15-11-2024 07:30:25</td>
+            <td><p class="status success">Thành công</p></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>HP LaserJet 3000</td>
+            <td><img src="/images//homeImage5.jpg" alt=""> Nguyễn Văn Bảo</td>
+            <td>Tài liệu.pdf</td>
+            <td><strong>4</strong></td>
+            <td>1</td>
+            <td>15-11-2024 07:35:40</td>
+            <td><p class="status payment">Đang chờ</p></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Brother DCP-T420W</td>
+            <td><img src="/images//homeImage6.jpg" alt=""> Phạm Thị Yến</td>
+            <td>Luận văn.docx</td>
+            <td><strong>10</strong></td>
+            <td>3</td>
+            <td>15-11-2024 07:45:50</td>
+            <td><p class="status failure">Thất bại</p></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Canon imageCLASS LBP6030w</td>
+            <td><img src="/images//homeImage7.jpg" alt=""> Vũ Văn Hải</td>
+            <td>Báo cáo cuối kỳ.pdf</td>
+            <td><strong>6</strong></td>
+            <td>1</td>
+            <td>15-11-2024 07:50:05</td>
+            <td><p class="status success">Thành công</p></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Epson L3250</td>
+            <td><img src="/images//homeImage8.jpg" alt=""> Hoàng Anh Tuấn</td>
+            <td>Phân tích.pdf</td>
+            <td><strong>8</strong></td>
+            <td>2</td>
+            <td>15-11-2024 07:55:20</td>
+            <td><p class="status success">Thành công</p></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>HP DeskJet Ink Advantage 3776</td>
+            <td><img src="/images//homeImage1.jpg" alt=""> Nguyễn Hữu Nam</td>
+            <td>Tóm tắt.docx</td>
+            <td><strong>5</strong></td>
+            <td>2</td>
+            <td>15-11-2024 08:00:30</td>
+            <td><p class="status progress">Đang in</p></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Brother HL-L3270CDW</td>
+            <td><img src="/images//homeImage2.jpg" alt=""> Trịnh Thị Quỳnh</td>
+            <td>Giáo trình.pdf</td>
+            <td><strong>12</strong></td>
+            <td>4</td>
+            <td>15-11-2024 08:05:45</td>
+            <td><p class="status failure">Thất bại</p></td>
+          </tr>
+          <!-- Add 10 more rows -->
+        </tbody>
+        
+      </table>
+    </section>
+  </main>
+</main>
+<script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  <script src="../scripts/home1.js"></script>
+  <script src="../scripts/search.js"></script>
+</body>
+</html>

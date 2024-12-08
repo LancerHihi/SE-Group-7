@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/body.css" />
+    <link rel="stylesheet" href="styles/account_signin1.css">
+    <title>Sign in</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="/images/logoBK.png" />
+      <p>Central Authentication Service</p>
+    </div>
+
+    <div class="wrapper">
+      <form action="">
+        <h1>Đăng Nhập</h1>
+
+        <div class="input-box">
+          <input type="text" placeholder="Tên đăng nhập" id="username" required />
+          <i class="bx bxs-user"></i>
+        </div>
+
+        <div class="input-box">
+          <input type="password" placeholder="Mật khẩu" id="password" required />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+
+        <div class="remember-forgot">
+          <label> <input type="checkbox" />Ghi nhớ tôi </label>
+          <a href="#">Quên mật khẩu?</a>
+        </div>
+
+        <button type="submit" class="btn">Đăng nhập</button>
+
+        <div class="register-link">
+          <p>
+            Không có tài khoản? <a href="account_register1.html">Đăng ký</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      (function initializeDefaultUsers() {
+        const defaultUsers = [
+          {
+            fullname: "Admin User",
+            phone: "1234567890",
+            faculty: "Administration",
+            email: "admin@hcmut.edu.vn",
+            username: "admin",
+            password: "admin123", // Secure password should be used in a real app
+            role: "admin",
+          },
+          {
+            fullname: "Student User",
+            phone: "0987654321",
+            faculty: "Computer Science",
+            email: "student@hcmut.edu.vn",
+            username: "student",
+            password: "123", // Secure password should be used in a real app
+            role: "student",
+          },
+        ];
+  
+        // Check if users data is already in localStorage
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+  
+        if (users.length === 0) {
+          localStorage.setItem('users', JSON.stringify(defaultUsers));
+          console.log('Default users initialized.');
+        } else {
+          console.log('Users already exist in localStorage.');
+        }
+      })();
+    </script>
+
+    <script src="/data/authenticate_signIn.js"></script>
+
+  </body>
+</html>

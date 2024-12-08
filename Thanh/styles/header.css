@@ -1,0 +1,45 @@
+/* Header styles */
+.header {
+  position: fixed;
+  background-color: rgb(29, 29, 128);
+  top: 0;
+  left: 0;
+  right: 0;
+  /* height: 80px; */
+  height: 10%;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+  z-index: 100;
+}
+
+.header img {
+  width: 60px;
+  height: 60px;
+}
+
+.header p {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+  flex-grow: 1; /* Ensures the text takes up available space */
+}
+
+.welcome {
+  margin-left: auto;
+  padding-right: 3%;
+  font-size: 1.5em;
+  color: white;
+}
+
+/* Content styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin-top: 80px; /* Ensures content starts below the header */
+  padding: 20px; /* Optional: Adds padding around content */
+}

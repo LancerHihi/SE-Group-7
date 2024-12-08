@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../styles/generalContentFormat.css" />
+    <!-- <link rel="stylesheet" href="/main/styles/responseBackground.css" /> -->
+    <link rel="stylesheet" href="../styles/table.css" />
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../images/logoBK.png" />
+        <a href="#" style="font-family: cursive; font-size: 25px">PAYMENT</a>
+      </div>
+      <div class="menu">
+        <div class="menu-links">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Exit</a>
+        </div>
+        <button class="log-in" id="Home">Home</button>
+      </div>
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <div class="backgroundPayment">
+      <div class="background-transparent">
+        <div class="text-overlay">
+          <div class="container" style="padding-bottom: 20px;">
+            <h1>Personal Details</h1>
+            <div class="personalDetail">
+              <div class="input_container">
+                <a>Username: </a>
+                <input type="text" id="name" placeholder="Enter your name" />
+              </div>
+              <div class="input_container">
+                <a>ID Number:</a>
+                <input
+                  type="text"
+                  id="IDN"
+                  placeholder="Enter your ID number"
+                />
+              </div>
+            </div>
+            <h1>OCB Details</h1>
+            <div class="personalDetail">
+              <div class="input_container">
+                <a>Username: </a>
+                <input
+                  type="text"
+                  id="nameBKPAY"
+                  placeholder="Enter your username"
+                />
+              </div>
+              <div class="input_container">
+                <a>Password: </a>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter your password"
+                />
+              </div>
+            </div>
+            <!--
+      <h3>Number of papers you are intending to buy</h3>
+      <h3>A3</h3>
+      <h3>A4</h3>
+    -->
+            <!-- <h5>Note: The price of one A3 paper is equivalent to two A4 papers</h5> -->
+          </div>
+            <div id="errorMessage" style="padding-top: 30px; font-style: italic; color: red; display: None">
+              The information is not right
+            </div>
+            <div id="NotFoundID" style="padding-top: 30px; font-style: italic; color: red; display: None">
+              The ID number is not exist
+            </div>
+            <div id="lackDetails" style="padding-top: 30px; font-style: italic; color: red; display: None">
+              Please enter full requirements
+            </div>
+          <div class="menu">
+          
+            <div class="confirm" style="padding-top: 10px">
+              <button id="loginForm" class="log-in">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="Footer">
+      <footer>
+        <p>This page is created by Team 7 of Software Engineering</p>
+        <p>
+          Web servicing for the printing that is only available for the people
+          in HCMUT
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="../scripts/loginBKPay.js" type="module"></script>
+  <script src="../scripts/return.js" type="module"></script>
+</html>
