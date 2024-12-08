@@ -226,6 +226,11 @@
                   <option value="current">Current Page</option>
                   <option value="range">Page Range</option>
                 </select>
+                <div id="pageRangeInput" style="display: none;">
+                  <input type="text" id="pageRange" placeholder="Enter page range (e.g., '1-5', '1,3,5')">
+                  <span id="pageRangeError" style="color: red; display: none;">Invalid page range format.</span>
+                </div>
+              </div>
               </div>
               <!-- <div class="popup-field">
                 <label class="popup-label" for="copies">Copies:</label>
@@ -277,6 +282,7 @@
                 <label class="popup-label" for="paper-size">Paper Size:</label>
                 <select class="popup-input" id="paper-size">
                   <option value="a4">A4</option>
+                  <option value="a4">A3</option>
                   <option value="letter">Letter</option>
                   <option value="legal">Legal</option>
                 </select>
