@@ -35,17 +35,17 @@ Password: ...
 In this section, you should start by sign out the default account of student, then register a new account of your own. Then you will you the information of that account to sign in the BKPay.
 **Note that:**__ The default money for each student is 100,000 VND.
 ```
-_Thông tin học sinh:_
+Thông tin học sinh:
 Họ và tên: Điền họ và tên của tài khoản
 Email: Điền Email của tài khoản
-_Thông tin OCB:_
+Thông tin OCB:
 Họ và tên: Điền tên người dùng (username)
 Mật khẩu: Điền mật khẩu
 ```
 
 ## 3. The flow you should do to view our application is:
-#### 1. Start with the student view (home page, printing module), choose a printer to print, enter the Copies to exceed the available pages, then use BKPay to buy more pages.
-#### 2. Start with the student view (home page, printing module), choose a printer to print, enter the Copies **not**__ to exceed the available pages, then printing (you should choose how many pages per sheet to see the effect of that option).
-#### 3. View the history of student
-#### 4. Start with the admin view (home page, view history of all student)
-#### 5. Compare the difference between the home page of admin view and student view, the difference between the view history page of admin view and student view.
+ 1. Start with the student view (home page, printing module), choose a printer to print, enter the Copies to exceed the available pages, then use BKPay to buy more pages.
+ 2. Start with the student view (home page, printing module), choose a printer to print, enter the Copies **not**__ to exceed the available pages, then printing (you should choose how many pages per sheet to see the effect of that option).
+ 3. View the history of student
+ 4. Start with the admin view (home page, view history of all student)
+ 5. Compare the difference between the home page of admin view and student view, the difference between the view history page of admin view and student view.
